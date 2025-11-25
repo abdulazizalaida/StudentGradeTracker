@@ -1,5 +1,20 @@
 import java.util.Scanner;
 
+// =======================================================================
+// Project: Student Grade Tracker
+// Contributors:
+//
+// 1) Mansour Trad Alotaibi – Team Leader
+//    • Designed the main structure of the project.
+//    • Implemented core OOP concepts and main logic.
+//    • Reviewed and organized the overall architecture.
+//
+// 2) Abdulaziz Bader Al-Iday – Team Member
+//    • Added menu input handling and validation logic.
+//    • Helped with debugging and improving user interaction.
+//    • Organized code formatting and pushed updates via GitHub.
+// =======================================================================
+
 public class Main {
 
     public static void main(String[] args) {
@@ -29,6 +44,7 @@ public class Main {
 
                     System.out.print("Enter initial grade (0 - 100): ");
                     double initialGrade;
+
                     try {
                         initialGrade = Double.parseDouble(scanner.nextLine());
                     } catch (NumberFormatException e) {
@@ -65,6 +81,7 @@ public class Main {
 
                     System.out.print("Enter grade (0 - 100): ");
                     double grade;
+
                     try {
                         grade = Double.parseDouble(scanner.nextLine());
                     } catch (NumberFormatException e) {
@@ -114,3 +131,4 @@ public class Main {
         scanner.close();
     }
 }
+
